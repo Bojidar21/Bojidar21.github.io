@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Начало</title>
+
+  <link rel="stylesheet" href="./css/email.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/general.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <script src="https://smtpjs.com/v3/smtp.js"></script> 
+  <script src="./js/email.js"></script>
+  <script src="./js/nav.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ 
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+  <link rel="icon" type="image/x-icon" href="./icons/IKONA.gif">
+  
+</head>
+<body>
+ <header>
+  <a href="javascript:void(0);" class="hamburger_icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+   </a>
+  <nav>
+    <a href="index.html" class="nav_link">Начало</a>
+    <a href="for_us.html" class="nav_link">За нас</a>
+    <a href="#services" class="nav_link">Услуги </a>
+    <a href="#projects" class="nav_link">Проекти</a>
+    <a href="#blog" class="nav_link">Блог</a>
+    <a href="#contacts" class="nav_link">Контакти</a>
+   
+
+  </nav>
+  <nav class="hamburger_nav">
+    <a href="#home" class="nav_link_hamb">Начало</a>
+    <a href="#about" class="nav_link_hamb">За нас</a>
+    <a href="#services" class="nav_link_hamb">Услуги </a>
+    <a href="#projects" class="nav_link_hamb">Проекти</a>
+    <a href="#blog" class="nav_link_hamb">Блог</a>
+    <a href="#contacts" class="nav_link_hamb">Контакти</a>
+  </nav>
+  
+ </header>
+ <main>
+ <div class="banner">
+  <img src="./pictures/DSCN45965.jpg" alt="" class="banner_background">
+
+  <img src="./icons/LOGO-GR_2.gif" class="icon"></a>
+   
+  <div class="banner_text">
+    <div class="inner_banner_text">
+    <h2>Developing Innovative Strategies</h2>
+    <h1>ACHIEVING GROWTH</h1>
+  </div>
+  </div>
+
+ </div>
+ <div class="_3_tabs">
+  <div class="tab">
+    <h1>SERVICES</h1>
+     <p>
+      I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+    </p> 
+    <button class="More_info_button">More info</button>
+  </div>
+  <div class="tab"> <h1>SERVICES</h1>
+    <p>
+     I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+   </p> 
+   <button class="More_info_button">More info</button></div>
+  <div class="tab"> <h1>SERVICES</h1>
+    <p>
+     I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+   </p> 
+   <button class="More_info_button">More info</button></div>
+
+ </div>
+ <div class="about_us">
+  <img src="./pictures/DSCN4621.JPG" class="about_us_background">
+  <div class="about_us_text">
+ <h1 class="main_heading">ЗА НАС</h1>
+ <p class="main_paragraph"> I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you. I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+</div>
+ </div>
+ <div class="clients_box">
+  <h1>Наши Партньори</h1> 
+  <div class="clients_row">
+    <div class="clients"><a href=""><img src="./clients_icons/2560px-Fiskars_2019_logo.svg.png" class="client_icon"></a></div>
+    <div class="clients"><a href=""><img src="./clients_icons/rblogo_pms348.jpg" class="client_icon"></a></div>
+    <div class="clients"><a href=""><img src="./clients_icons/makita_logo3.png" class="client_icon" id="last_client_icon"></a></div>
+
+    
+  </div> 
+</div>
+
+
+
+ <div class="email_container">
+  <form class="form" onsubmit="sendEmail(); reset(); return false;">
+    <h3>СВЪРЖЕТЕ СЕ С НАС</h3>
+    <input class="input" type="text" id="name" placeholder="Име"  required>
+    <input class="input" type="text" id="last_name" placeholder="Фамилия" required>
+    <input class="input" type="email" id="email" placeholder="Имейл" required>
+    <input class="input" type="phone" id="phone" placeholder="Телефон" required>
+    <textarea class="input" name="" id="message" rows="6" placeholder="Как може да ви помогнем? "></textarea>
+    <button type="submit" id="sent" onclick="sent()">Изпрати</button>
+    <div id="alert"></div>
+
+
+  </form>
+
+
+</div>
+
+ </main>
+ <footer>
+  <div>FOOTER</div>
+</footer>
+
+</body>
+</html>

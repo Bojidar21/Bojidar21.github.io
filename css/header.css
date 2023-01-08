@@ -1,0 +1,130 @@
+header{
+  display: grid;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 30;
+  justify-content: center;
+  align-items: center;
+
+}
+.nav_link {
+  color: white;
+  border: none;
+  background-color: transparent;
+ padding-right: 15px;
+ padding-left: 15px;
+ font-size: 20px;
+ padding-bottom: 16px;
+ padding-top: 16px;
+ border-bottom-left-radius: 20px;
+ border-bottom-right-radius: 20px;
+ z-index: 30;
+ opacity: 1;
+
+ 
+}
+.nav_link:active{
+  opacity: 0.5;
+  transition: 0.1s;
+}
+.nav_link:hover{
+  color: #6ACF65;
+  transition: 0.6s;
+  cursor: pointer;
+  font-size: 20px;
+  
+  z-index: 10;
+  opacity: 1;
+  background-color: #046307;
+  
+
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color:#046307;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 9;
+  opacity: 0.8;
+}
+.hamburger_icon{
+  display: none;
+  opacity: 0.6;
+  background-color: #046307;
+  border-bottom-right-radius: 20px;
+
+}
+i.fa.fa-bars{
+  color: white;
+  font-size: 30px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.hamburger_nav{
+  display: none;
+}
+.nav_link_hamb{
+  display: none;
+}
+.nav_link_hamb:active{
+  opacity: 0.5;
+  transition: 0.1s;
+}
+.nav_link_hamb:hover{
+  color: #6ACF65;
+  transition: 0.6s;
+  cursor: pointer;  
+  z-index: 10;
+  opacity: 1;
+  background-color: #046307;
+  
+
+}
+
+
+
+
+
+/*To add hamburger menu at 600px */
+@media screen and (max-width:640px) {
+  nav{
+    display: none;
+  }
+  header{
+    position: fixed;
+    display: block;
+  }
+  .hamburger_icon{
+    display:inline-block;
+    width: 70px;
+    height: 50px;
+    background-color: black;
+    z-index: 40;
+    position: relative;
+  }
+  .hamburger_nav{
+   display: none;
+   position: absolute;
+   z-index: 39;
+   top: 0px;
+   left: 0px;
+   opacity: 0.9;
+   padding-top: 45px;
+   padding-bottom: 30px;
+   border-bottom-left-radius: 0px;
+  }
+  .nav_link_hamb{
+    display: block;
+    padding-top: 20px;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+}
