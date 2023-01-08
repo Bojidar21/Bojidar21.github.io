@@ -3,7 +3,7 @@ function sendEmail() {
     Host : "smtp.elasticemail.com",
     Username : "art.consult@abv.bg",
     Password : "878AEE9E80BC45C97E1597C5E939EC50B074",
-    To : 'b.dimitrov.2004@gmail.com',
+    To : 'bojidar.d.peev@gmail.com',
     From : document.getElementById("email").value,
     Subject : "Запитване",
     Body : "Име: " + document.getElementById("name").value
