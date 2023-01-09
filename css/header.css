@@ -135,6 +135,8 @@ nav{
    padding-top: 45px;
    padding-bottom: 30px;
    border-bottom-left-radius: 0px;
+   transition: top 1.5s;
+
   }
   .nav_link_hamb{
     display: block;

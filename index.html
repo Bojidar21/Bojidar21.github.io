@@ -44,7 +44,8 @@
 <!--to add image comparison slider-->
 <!--hovarable side buttons-->
 <body>
- <header>
+ <header class="desktop_header">
+ 
   <nav>
     <a href="index.html" class="nav_link">Начало</a>
     <a href="for_us.html" class="nav_link">За нас</a>
@@ -55,7 +56,18 @@
    
 
   </nav>
-  <nav class="hamburger_nav">
+  
+  
+ </header>
+ <header class="mobile_header">
+  <a href="javascript:void(0);" class="hamburger_icon" onclick="menu()">
+    <div class="container" onclick="myFunction(this)">
+   <div class="bar1"></div>
+   <div class="bar2"></div>
+   <div class="bar3"></div>
+  </div>
+   </a>
+   <nav class="hamburger_nav">
     <a href="index.html" class="nav_link_hamb">Начало</a>
     <a href="for_us.html" class="nav_link_hamb">За нас</a>
     <a href="#services" class="nav_link_hamb">Услуги </a>
@@ -63,7 +75,7 @@
     <a href="#blog" class="nav_link_hamb">Блог</a>
     <a href="#contacts" class="nav_link_hamb">Контакти</a>
   </nav>
-  
+
  </header>
  <main>
  <div class="banner">
