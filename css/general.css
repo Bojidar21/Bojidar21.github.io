@@ -4,6 +4,11 @@
   box-sizing: border-box;
 
 }
+main{
+}
+head{
+  transition: margin-left .5s;
+}
 html{
   scroll-behavior: smooth;
   display: flex;
@@ -14,25 +19,28 @@ body{
   display: flex;
   flex-direction: column;
   font-family: 'Open Sans', sans-serif;
-
+  transition: margin-left 1s;
+  overflow: overlay;
 }
 ::-webkit-scrollbar{
   width: 15px;
+  background: transparent;
 }
 ::-webkit-scrollbar-track{
-  background:#f1f1f1 ;
+ background-color: transparent;
 }
 ::-webkit-scrollbar-thumb{
-  background: #888;
+  background: #046307;
   border-radius: 15px;
 
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #888;
-  cursor:crosshair;
+  cursor:pointer;
+ 
 }
 ::-webkit-scrollbar-thumb:active{
-  background: #555;
+  cursor: grabbing;
+  background-color: rgba(4,140,7,0.9);
 }
 a{
   text-decoration: none;

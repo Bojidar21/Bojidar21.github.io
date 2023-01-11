@@ -39,8 +39,6 @@
 </head>
 <!--to put read more/less from w3schools.com-->
 <!--to put Modal image in my image gallery / and maybe image zoom-->
-<!--to add parallax scroll on my backgrounds-->
-<!--to add scroll back to top-->
 <!--to add image comparison slider-->
 <!--hovarable side buttons-->
 <body>
@@ -49,7 +47,7 @@
   <nav>
     <a href="index.html" class="nav_link">Начало</a>
     <a href="for_us.html" class="nav_link">За нас</a>
-    <a href="#services" class="nav_link">Услуги </a>
+    <a href="#services" class="nav_link">Услуги</a>
     <a href="#projects" class="nav_link">Проекти</a>
     <a href="#blog" class="nav_link">Блог</a>
     <a href="#contacts" class="nav_link">Контакти</a>
@@ -70,7 +68,7 @@
    <nav class="hamburger_nav">
     <a href="index.html" class="nav_link_hamb">Начало</a>
     <a href="for_us.html" class="nav_link_hamb">За нас</a>
-    <a href="#services" class="nav_link_hamb">Услуги </a>
+    <a href="#services" class="nav_link_hamb">Услуги</a>
     <a href="#projects" class="nav_link_hamb">Проекти</a>
     <a href="#blog" class="nav_link_hamb">Блог</a>
     <a href="#contacts" class="nav_link_hamb">Контакти</a>
@@ -79,9 +77,8 @@
  </header>
  <main>
  <div class="banner">
-  <img src="./pictures/DSCN45965.jpg" alt="" class="banner_background">
-
-  <img src="./icons/LOGO-GR_2.gif" class="icon"></a>
+  <div class="banner_background"></div>
+  <img src="./icons/LOGO-GR_2.gif" class="icon">
    
   <div class="banner_text">
     <div class="inner_banner_text">
@@ -93,18 +90,18 @@
  </div>
  <div class="_3_tabs">
   <div class="tab">
-    <h1>SERVICES</h1>
+    <h1>Услуги</h1>
      <p>
       I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
     </p> 
     <button class="More_info_button">More info</button>
   </div>
-  <div class="tab"> <h1></h1>
+  <div class="tab"> <h1>Проекти</h1>
     <p>
      I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
    </p> 
    <button class="More_info_button">More info</button></div>
-  <div class="tab"> <h1>SERVICES</h1>
+  <div class="tab"> <h1>Блог</h1>
     <p>
      I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
    </p> 
@@ -112,7 +109,7 @@
 
  </div>
  <div class="about_us">
-  <img src="./pictures/DSCN4621.JPG" class="about_us_background">
+  <div class="about_us_background"></div>
   <div class="about_us_text">
  <h1 class="main_heading">ЗА НАС</h1>
  <p class="main_paragraph"> I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you. I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
@@ -121,9 +118,13 @@
  <div class="clients_box">
   <h1>Наши Партньори</h1> 
   <div class="clients_row">
-    <div class="clients"><a href=""><img src="./clients_icons/2560px-Fiskars_2019_logo.svg.png" class="client_icon"></a></div>
-    <div class="clients"><a href=""><img src="./clients_icons/rblogo_pms348.jpg" class="client_icon"></a></div>
-    <div class="clients"><a href=""><img src="./clients_icons/makita_logo3.png" class="client_icon" id="last_client_icon"></a></div>
+    <div class="clients"><a href="https://www.fiskars.bg/"><img src="./clients_icons/2560px-Fiskars_2019_logo.svg.png" class="client_icon"></a><div class="clients_tooltip">Към сайта</div></div>
+
+   
+
+    <div class="clients"><a href="https://www.rainbird.com/eur"><img src="./clients_icons/rblogo_pms348.png" class="client_icon"></a><div class="clients_tooltip">Към сайта</div></div>
+
+    <div class="clients"><a href="https://www.makita.bg/"><img src="./clients_icons/Makita_logo_.png" class="client_icon" id="last_client_icon"></a><div class="clients_tooltip">Към сайта</div></div>
 
     
   </div> 
@@ -149,9 +150,9 @@
   
     </form>
   </div>
-  <div class="contact"><p><a href="tel:+0878665902">0878665902</a></p></div>
+  <div class="contact"><p>Телефон: <a href="tel:+0878665902">0878665902</a></p></div>
   
 </footer>
-
+ <button id="top_button" onclick="GoToTop()"><img src="./icons/up-arrow.png"></button>
 </body>
 </html>

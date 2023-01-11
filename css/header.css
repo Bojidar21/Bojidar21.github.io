@@ -128,20 +128,22 @@ nav{
   }
   .hamburger_nav{
    display: none;
-   position: absolute;
-   z-index: 39;
-   top: 0px;
-   left: 0px;
-   padding-top: 45px;
+   position: fixed;
+   z-index:1;
+   padding-top: 60px;
    padding-bottom: 30px;
    border-bottom-left-radius: 0px;
-   transition: top 1.5s;
-
+   height: 100%;
+   width: 0;
+   top: 0;
+   left: 0;
+   overflow-x: hidden;
+   transition: 0.5s;
   }
   .nav_link_hamb{
     display: block;
-    padding-top: 20px;
-    font-size: 25px;
+    padding-top: 50px;
+    font-size: 30px;
     padding-left: 20px;
     padding-right: 20px;
 
