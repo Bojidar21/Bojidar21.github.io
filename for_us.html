@@ -1,53 +1,104 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/x-icon" href="../icons/IKONA.gif">
-  <link rel="stylesheet" href="./css/footer.css">
+  <title>Начало</title>
+
+  <link rel="stylesheet" href="./css/email.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/general.css">
-  <script src="./js/nav.js"></script>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/footer.css">
 
   <link rel="stylesheet" href="./css/for_us.css">
+
+
+
+  <script src="./js/nav.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script> 
+  <script src="./js/email.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>За нас</title>
-</head>
-<body>
-  <header>
-    <nav>
-      <a href="index.html" class="nav_link">Начало</a>
-      <a href="for_us.html" class="nav_link">За нас</a>
-      <a href="#services" class="nav_link">Услуги </a>
-      <a href="#projects" class="nav_link">Проекти</a>
-      <a href="#blog" class="nav_link">Блог</a>
-      <a href="#contacts" class="nav_link">Контакти</a>
-     
+
+ 
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+  <link rel="shortcut icon" type="image/png" href="IKONA.png">
   
-    </nav>
-    <nav class="hamburger_nav">
-      <a href="index.html" class="nav_link_hamb">Начало</a>
-      <a href="for_us.html" class="nav_link_hamb">За нас</a>
-      <a href="#services" class="nav_link_hamb">Услуги </a>
-      <a href="#projects" class="nav_link_hamb">Проекти</a>
-      <a href="#blog" class="nav_link_hamb">Блог</a>
-      <a href="#contacts" class="nav_link_hamb">Контакти</a>
-    </nav>
-    
-   </header>
-  <main>
+</head>
+<!--to put read more/less from w3schools.com-->
+<!--to put Modal image in my image gallery / and maybe image zoom-->
+<!--to add image comparison slider-->
+<!--hovarable side buttons-->
+<body>
+ <header class="desktop_header">
+ 
+  <nav>
+    <a href="index.html" class="nav_link">Начало</a>
+    <a href="for_us.html" class="nav_link">За нас</a>
+    <a href="#services" class="nav_link">Услуги</a>
+    <a href="#projects" class="nav_link">Проекти</a>
+    <a href="#blog" class="nav_link">Блог</a>
+    <a href="#contacts" class="nav_link">Контакти</a>
    
-  </main>
-  <footer>
-   Footer
-  </footer>
+
+  </nav>
+  
+  
+ </header>
+ <header class="mobile_header">
+  <a href="javascript:void(0);" class="hamburger_icon" onclick="menu()">
+    <div class="container" onclick="myFunction(this)">
+   <div class="bar1"></div>
+   <div class="bar2"></div>
+   <div class="bar3"></div>
+  </div>
+   </a>
+   <nav class="hamburger_nav">
+    <a href="index.html" class="nav_link_hamb">Начало</a>
+    <a href="for_us.html" class="nav_link_hamb">За нас</a>
+    <a href="#services" class="nav_link_hamb">Услуги</a>
+    <a href="#projects" class="nav_link_hamb">Проекти</a>
+    <a href="#blog" class="nav_link_hamb">Блог</a>
+    <a href="#contacts" class="nav_link_hamb">Контакти</a>
+  </nav>
+
+ </header>
+  <main></main>
+ <footer>
+ 
+  <div class="email_container">
+    <form class="form" onsubmit="sendEmail(); reset(); return false;">
+      <h3>СВЪРЖЕТЕ СЕ С НАС</h3>
+      <input class="input" type="text" id="name" placeholder="Име"  required>
+      <input class="input" type="text" id="last_name" placeholder="Фамилия" required>
+      <input class="input" type="email" id="email" placeholder="Имейл" required>
+      <input class="input" type="phone" id="phone" placeholder="Телефон" required>
+      <textarea class="input" name="" id="message" rows="6" placeholder="Как може да ви помогнем? "></textarea>
+      <button type="submit" id="sent" onclick="sent()">Изпрати</button>
+      <div id="alert"></div>
+  
+  
+    </form>
+  </div>
+  <div class="contact"><p>Телефон: <a href="tel:+0878665902">0878665902</a></p></div>
+  
+</footer>
+ <button id="top_button" onclick="GoToTop()"><img src="./icons/up-arrow.png"></button>
 </body>
 </html>
