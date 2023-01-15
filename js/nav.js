@@ -4,13 +4,13 @@ function menu() {
     x.style.display = "none";
     document.querySelector(".hamburger_nav").style.width = "0"
     document.querySelector("body").style.marginLeft = "0"
-    document.body.style.backgroundColor = "white"
+    document.body.style.backgroundColor = "#046307"
 
   } else {
     x.style.display = "block";
-    document.querySelector(".hamburger_nav").style.width = "250px";
-    document.querySelector("body").style.marginLeft = "250px"
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)"
+   document.querySelector(".hamburger_nav").style.width = "200px";
+   document.querySelector("body").style.marginLeft = "200px"
+    document.body.style.backgroundColor = "#046307"
   }
 }
 
