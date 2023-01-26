@@ -4,7 +4,6 @@ function menu() {
     x.style.display = "none";
     document.querySelector(".hamburger_nav").style.width = "0"
     document.querySelector("body").style.marginLeft = "0"
-    document.body.style.backgroundColor = "#046307"
 
   } else {
     x.style.display = "block";
