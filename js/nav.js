@@ -8,9 +8,7 @@ function menu() {
 
   } else {
     x.style.display = "block";
-   document.querySelector(".hamburger_nav").style.width = "200px";
-   document.querySelector("body").style.marginLeft = "200px"
-    document.body.style.backgroundColor = "#046307"
+   document.querySelector(".hamburger_nav").style.width = "200px"
   }
 }
 
