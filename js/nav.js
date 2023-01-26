@@ -18,12 +18,10 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos>currentScrollPos) {
-    document.querySelector(".desktop_header").style.top = "0";
-    document.querySelector(".mobile_header").style.top = "0";
+    document.querySelector(".desktop_header").style.top = "0"
 
   } else {
     document.querySelector(".desktop_header").style.top = "-85px"
-    document.querySelector(".mobile_header").style.top = "-85px"
   }
   prevScrollpos = currentScrollPos;
 }
