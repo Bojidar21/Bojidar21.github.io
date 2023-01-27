@@ -23,7 +23,7 @@ body{
   overflow: overlay;
 }
 ::-webkit-scrollbar{
-  width: 15px;
+  width: 10px;
   background: transparent;
 }
 ::-webkit-scrollbar-track{
@@ -31,16 +31,12 @@ body{
 }
 ::-webkit-scrollbar-thumb{
   background: #046307;
-  border-radius: 15px;
-
-}
-::-webkit-scrollbar-thumb:hover {
-  cursor:pointer;
- 
+  border-radius: 20px;
 }
 ::-webkit-scrollbar-thumb:active{
-  cursor: grabbing;
-  background-color: rgba(4,140,7,0.9);
+  cursor: pointer;
+  background-color: rgba(10,140,7,0.9);
+  width: 15px;
 }
 a{
   text-decoration: none;
