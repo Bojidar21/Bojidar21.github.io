@@ -1,0 +1,33 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+  text-align: center;
+  padding-top: 10px;
+}
+#numbers{
+  font-size: 85px;
+  border-top: solid 1px;
+  padding-top: 10px;
+ 
+}
+button{
+  padding: 15px 10px;
+  border-radius: 15px;
+  border: none;
+  margin-top: 50px;
+  font-size: 22px;
+  color: white;
+  background-color: #046307;
+}
+button:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+img{
+  height: 100px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
