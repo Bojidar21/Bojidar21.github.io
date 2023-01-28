@@ -1,1 +1,1 @@
-# https://bojidar21.github.io/
+https://landconsult.bg
