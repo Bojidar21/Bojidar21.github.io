@@ -232,29 +232,6 @@ height: 500px;
 .clients:hover .clients_tooltip{
   opacity: 1;
 }
-#top_button{
-  position: fixed;
-  display: inline-block;
-  bottom: 10px;
-  right: 15px;
-  opacity: 2;
-  background-color: transparent;
-  border: none;
-  z-index: 99;
-}
-#top_button img {
-  height: 40px;
-  opacity: 2;
-  position: relative;
-  z-index: 99;
-}
-#top_button:hover img{
-  background-color: #046307;
-  cursor: pointer;
-  transition: 0.7s;
-  border-radius: 20px;
-  z-index: 99;
-}
 @media screen and (max-width:768px) {
   .tab:nth-child(2){
     margin-left: 0px;

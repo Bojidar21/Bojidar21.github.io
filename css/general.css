@@ -46,3 +46,22 @@ a{
 a:visited{
   color: white;
 }
+#top_button{
+  position: fixed;
+  display: inline-block;
+  bottom: 10px;
+  right: 15px;
+  opacity: 2;
+  background-color: transparent;
+  border: none;
+  z-index: 99;
+}
+#top_button img {
+  height: 40px;
+  opacity: 2;
+  position: relative;
+  z-index: 99;
+}
+#top_button:hover img{ 
+  cursor: pointer;
+}

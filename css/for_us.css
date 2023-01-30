@@ -1,3 +1,66 @@
-main{
+.banner{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+  height: 750px;
+  top: 0px;
+  
+  
+
+}
+.banner_background{
+  z-index: 10;
+  height: 750px;
+  position: absolute;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed ;
+  background-image: url(/pictures/DSCN45965.jpg);
+
+
+}
+.icon{
+  height: 200px;
+  padding-top: 0px;
+  z-index: 11;
+  position: absolute;
+  top: 100px;
+  opacity: 0.7;
+ }
+ .nav_icon{
+   color: white;
+ }
+.banner_text{
+  display: flex;
+  border: none;
+  z-index: 20;
+  background-color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 140px;
+ justify-content: center;
+ border-top-left-radius: 10px ;
+ border-top-right-radius: 10px;
+ z-index: 12;
+ position: absolute;
+ top: 610px;
+}
+.inner_banner_text{
+  margin-top: 20px;
+ text-align: center;
+
+}
+.inner_banner_text h2{
+  font-size: 20px;
+}
+.inner_banner_text h1{
+  font-size: 50px;
+  margin-top: 20px;
+  display: inline-block;
 
 }

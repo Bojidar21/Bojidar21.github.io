@@ -41,10 +41,3 @@ window.onscroll = function() {
 function myFunction(x) {
   x.classList.toggle("change");
 }
-let toTopButton = document.getElementById("top_button")
-
-
-function GoToTop() {
- document.body,screenTop = 0
- document.documentElement.scrollTop = 0
-}
