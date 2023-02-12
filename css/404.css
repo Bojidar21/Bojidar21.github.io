@@ -5,11 +5,11 @@
 }
 a{
   text-decoration: none;
-  color: white;
+  color: gray
 
 }
 a:visited{
-  color: white;
+  color: gray
 }
 body{
   background-image: url(/pictures/2.jpg);
@@ -23,12 +23,12 @@ body{
 #text_404{
   font-size: 120px;
   padding-top: 10px;
-  color: whitesmoke;
+  color: gray;
   font-family: 'Caveat', cursive;
  
 }
 :root{
-  --line_color:whitesmoke;
+  --line_color:gray;
   --back_color:#1e4620;
 }
 .button{
