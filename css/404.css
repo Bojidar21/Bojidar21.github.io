@@ -13,6 +13,7 @@ a:visited{
 }
 body{
   background-image: url(/pictures/pexels-matthew-montrone-1179229.jpg);
+  background-size: cover;
   align-items: center;
   text-align: center;
   display: grid;
