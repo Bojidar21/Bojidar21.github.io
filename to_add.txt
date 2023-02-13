@@ -1,0 +1,7 @@
+<!--to put read more/less from w3schools.com-->
+
+<!--to put Modal image in my image gallery / and maybe image zoom-->
+
+<!--to add image comparison slider-->
+
+<!--to add cookies to the website and gtpr-->

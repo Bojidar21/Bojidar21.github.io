@@ -43,6 +43,9 @@ a{
   color: white;
 
 }
+a:hover{
+  cursor: pointer;
+}
 a:visited{
   color: white;
 }

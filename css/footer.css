@@ -96,20 +96,23 @@ textarea{
   position: relative;
   display: inline-block;
   background-color: #6ACF65;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
   
 }
 #copyright{
  display:inline-block;
- font-size: 16px;
  padding-left: 10px;
  padding-top: 3px;
  padding-bottom: 2px;
  padding-right: 10px;
-
+}
+#copyright p {
+  display: inline-block;
 }
 .privacy_policy{
   display:inline-block;
-  font-size: 16px;
   padding-left: 10px;
   padding-top: 3px;
   padding-bottom: 2px;
