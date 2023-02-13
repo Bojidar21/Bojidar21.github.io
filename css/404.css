@@ -5,14 +5,14 @@
 }
 a{
   text-decoration: none;
-  color: gray
+  color: #fff
 
 }
 a:visited{
-  color: gray
+  color: #fff
 }
 body{
-  background-image: url(/pictures/2.jpg);
+  background-image: url(/pictures/pexels-pixabay-65281.jpg);
   background-size: cover;
   align-items: center;
   text-align: center;
@@ -23,12 +23,11 @@ body{
 #text_404{
   font-size: 120px;
   padding-top: 10px;
-  color: gray;
+  color: #fff;
   font-family: 'Caveat', cursive;
- 
 }
 :root{
-  --line_color:gray;
+  --line_color:#fff;
   --back_color:#1e4620;
 }
 .button{
@@ -241,4 +240,6 @@ body{
   flex-direction : column ;
   justify-content : center ;
   align-items : center ;
+  opacity: 0;
+  transition: 2.5s;
 }
